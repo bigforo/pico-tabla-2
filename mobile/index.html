@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101315" />
+    <title>Tabla 2</title>
+    <script type="module" crossorigin src="/assets/index-CWsSQ52c.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-zMsRsjfn.css">
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game-canvas" aria-label="Tabla game board"></canvas>
+
+      <header class="topbar">
+        <div class="brand">TABLA 2</div>
+        <div id="status" class="status" aria-live="polite"></div>
+        <div class="toolbar">
+          <button id="sound" class="icon-button" title="Mute audio" aria-label="Mute audio" aria-pressed="false">
+            <i data-lucide="volume-2"></i>
+          </button>
+          <button id="restart" class="icon-button" title="Restart game" aria-label="Restart game">
+            <i data-lucide="rotate-ccw"></i>
+          </button>
+        </div>
+      </header>
+
+      <section class="scorebar" aria-label="Score">
+        <div class="score"><span class="player-dot human"></span><span id="human-label">YOU</span><strong id="human-score">0</strong></div>
+        <div class="mode-switch" role="group" aria-label="Game mode">
+          <button id="human-mode" class="mode-option selected" aria-pressed="true">You vs Bot</button>
+          <button id="bot-mode" class="mode-option" aria-pressed="false">Bot vs Bot</button>
+        </div>
+        <div class="score"><strong id="bot-score">0</strong><span id="bot-label">BOT</span><span class="player-dot bot"></span></div>
+      </section>
+
+      <footer class="controls">
+        <div id="rolled-dice" class="rolled-dice" aria-label="Rolled dice"></div>
+        <div id="move-dice" class="move-dice" aria-label="Available moves"></div>
+        <button id="primary-action" class="primary-action"></button>
+      </footer>
+    </main>
+  </body>
+</html>
